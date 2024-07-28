@@ -276,7 +276,7 @@ Return
 
 Accept:
 If (AcceptT) {
-    PixelSearch,,, 50, 50, 50, 50w, %colorA%, 2, Fast
+    PixelSearch,,, 50, 50, 50, 50, %colorA%, 2, Fast
     if (ErrorLevel = 1) {
         Mousegetpos, MouseX, MouseY, Window
         X1 := MouseX + Rand(10), Y1 := MouseY + Rand(10)
@@ -361,7 +361,7 @@ CheckBoxHandler:
             GuiControl, +c%TriggerBotNotificationGUIColor%, PixelBot Notification
             Gosub PixelBotNotification
         
-        Case "Toggle Speech":
+        Case "Speech":
             SpeechT := !SpeechT
         
         Case "Counter Strafe":
